@@ -1,0 +1,142 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    color: #FFFACA;
+    margin-top: 30px;
+    background: #172D13;
+}
+
+.header {
+    font-size: 50px;
+    padding: 30px;
+    color: #FFFACA;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 252px;
+    margin-left: 280px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFFACA;
+    font-weight: bold;
+    text-align: center;
+}
+
+.radio-title {
+    margin-left: 20px;
+}
+
+#scatterplot {
+    margin-left: 33px;
+}
+
+.pie-area {
+    width: 45%;
+    margin-right: 0px;
+}
+
+#doughnutchart {
+    margin-left: 213px;
+    margin-right: 123px;
+}
+
+.inner-container {
+    display: flex;
+}
+
+.margin-right {
+    margin-right: 30px;
+}
+
+.axis line {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+path.domain {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 15px;
+}
+
+.axis-title {
+    font-size: 15px;
+    fill: #FFFACA;
+}
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+label {
+    color: #FFFACA;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+input:checked + label{
+    color: #FFFACA;
+    background: #5DBB63;
+}
+
+label + input + label {
+    border-left: solid 1px #FFFACA;
+}
+.radio-group {
+    border: solid 3px #FFFACA;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* ScatterPlot*/
+.point {
+    fill: #FFFFE5;
+    fill-opacity: 70%;
+}
+.point:hover {
+    fill: #D76F30;
+    fill-opacity: 100%;
+}
+.point.active {
+    fill: #D76F30;
+    fill-opacity: 100%;
+
+}
+
+/* heatmap */
+.h-cell:hover {
+    fill: #D76F30;
+    stroke-width: 2px;
+    stroke: #FFFACA;
+}
+
+.h-cell.active {
+    fill: #D76F30;
+    stroke-width: 2px;
+}
+
+/* Tooltip */
+#tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0px rgb(92 92 92 / 0.5);
+    border: 1px solid #ddd;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px;
+    min-width: 160px;
+    color: #333;
+}

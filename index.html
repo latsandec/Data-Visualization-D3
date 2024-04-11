@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D3 Project Starter Template</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO="/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Add HTML content, SVG drawing area, ... -->
+
+<div class="container">
+    <div class="inner-container">
+
+        <div>
+            <div class="header">Personal Habits</div>
+            <div class="header"> v.s.</div>
+            <div class="header"> Sleep Patterns </div>
+        </div>
+        <div>
+            <span class="title radio-title"> Please select a lifestyle that affects sleep quality</span>
+            <form>
+                <div class="radio-group">
+                    <input type="radio" id="caffeine" name="selector" checked><label for="caffeine">Caffeine consumption</label><input
+                        type="radio" id="alcohol" name="selector"><label for="alcohol">Alcohol consumption</label><input
+                        type="radio" id="exercise" name="selector"><label for="exercise">Exercise frequency</label>
+                </div>
+            </form>
+            <svg id="heatmap"></svg>
+            <div id="tooltip"></div>
+        </div>
+    </div>
+    <div class="inner-container">
+
+        <div class="pie-area">
+            <p class="title"> More info about individual(s)</p>
+            <svg id="doughnutchart" class="margin-right"></svg>
+        </div>
+        <div>
+            <p class="title"> Sleep efficiency v.s. Age</p>
+            <svg id="scatterplot"></svg>
+        </div>
+    </div>
+</div>
+
+<!-- D3 bundle -->
+<script src="js/d3.v6.min.js"></script>
+
+<!-- Our JS code -->
+<script src="js/heatmap.js"></script>
+<script src="js/main.js"></script>
+<script src="js/doughnutchart.js"></script>
+<script src="js/scatterPlot.js"></script>
+
+</body>
+</html>
